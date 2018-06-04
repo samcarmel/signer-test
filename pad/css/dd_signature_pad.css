@@ -1,0 +1,111 @@
+/**
+* HTML5 Signature Software
+* Copyright (c) 2010 - 2013 Dream Designs (www.dreamdesignsweb.com)
+* Under GPL (ww.dreamdesignsweb.com/license) licenses.
+* All scripts & codes in this file was created by Dream Designs @ www.dreamdesignsweb.com
+* ----------------------------------------------------
+* Last Mod: Sep 11 2013 | version 1.4
+*/
+/**
+* Signature pad wrapper
+*/
+#dd_signaturePadWrapper {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+/**
+* Canvas element
+*/
+#dd_canvas:hover {
+	cursor: url('images/dd_signature_pad/pencil.cur'), 
+			url('../images/dd_signature_pad/pencil.cur'), 
+			auto;
+}
+#dd_canvas:active {
+	cursor: url('images/dd_signature_pad/pencil.cur'), 
+			url('../images/dd_signature_pad/pencil.cur'), 
+			auto;
+}
+/**
+* Tool wrapper
+*/
+#dd_signatureToolWrapper {
+    display: flex !important;
+}
+#dd_signatureToolWrapper img {
+	border: none;
+}
+/**
+* Pencil Picker icon
+*/
+#dd_tool_pencilPicker:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+/**
+* Color picker icon
+*/
+#dd_tool_colorPicker:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+/**
+* Undo icon
+*/
+#dd_tool_undo:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+/**
+* Erasor icon
+*/
+#dd_tool_erasor:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+/**
+* Save Button
+*/
+#dd_saveButton {
+    background-color: #3DA4FF;
+    border-color: #3DA4FF;
+    color: #fff;
+    padding: 6px 20px;
+        display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center; 
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+        margin-left: 10px;
+}
+#dd_saveButton:hover {
+    color: #fff;
+    background-color: #1786E5;
+    border-color: #1786E5;
+}
+#dd_objSaveButtonWrapper {
+        display: none;
+	padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+        margin: 0 -15px;
+    margin-top: 15px;
+}
+#draw {
+	    height: 230px;
+}

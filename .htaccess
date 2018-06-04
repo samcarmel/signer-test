@@ -1,0 +1,17 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule    ^dashboard/?$    files/dashboard.php    [NC,L]  
+RewriteRule    ^documents/?$    files/documents.php    [NC,L]  
+RewriteRule    ^sign/?$    files/sign.php    [NC,L]  
+RewriteRule    ^notifications/?$    files/notifications.php    [NC,L]  
+RewriteRule    ^team/?$    files/team.php    [NC,L] 
+RewriteRule    ^companies/?$    files/companies.php    [NC,L] 
+RewriteRule    ^settings/?$    files/settings.php    [NC,L]  
+RewriteRule    ^signature/?$    files/signature.php    [NC,L]  
+RewriteRule    ^login/?$    files/login.php    [NC,L]  
+RewriteRule    ^logout/?$    files/logout.php    [NC,L]  
+RewriteRule    ^requests/?$    files/requests.php    [NC,L]  
+RewriteRule    ^exportchat/([a-zA-Z0-9_-]+)/?$    files/exportchat.php?key=$1    [NC,L]  
+RewriteRule    ^open/([a-zA-Z0-9_-]+)/?$    files/open.php?key=$1    [NC,L]  
+
